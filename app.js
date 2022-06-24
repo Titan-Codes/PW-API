@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 const url = "https://api.penpencil.xyz";
 
 // my access token dont use uwu
-let access_token = ""; // 34aebd1f67ec8352257b0e2c5489122b193d73ab54449f3be4833e0f06c239b4
+let access_token = "";
 
 app.get("/", (req,res)=>{
     res.render("home")
