@@ -24,7 +24,21 @@ app.post("/", (req,res)=>{
     // res.redirect("/data")
 })
 
-app.get("/:token/data", (req, res) => {
+app.get("/:token/profile", (req,res)=>{
+    const aToken = req.params.token;
+    let config = {
+        headers: {
+            authorization: `Bearer ${aToken}`
+        }
+    }
+
+    axios.get(`${url}/v1/users/my-profile`, config)
+        .then(response=>{
+            res.send(response.data.data)
+        })
+})
+
+app.get("/:token/batches", (req, res) => {
     const aToken = req.params.token;
     let config = {
         headers: {
