@@ -13,7 +13,7 @@
             font-size: 20px;
         }
         code {
-            color: grey;
+            color: rgb(108, 108, 108);
         }
     </style>
 </head>
@@ -25,49 +25,9 @@
     <hr>
     <h2 style="text-align: center;">In order to get response from PW API you need to have your access token</h2>
     <div style="text-align: center;">
-        <h3>How to get your access token</h3>
-        <ul style="list-style: none;">
-            <li class="list-item">1. Go to the <a href="https://pw.live" target="_blank">PW Website</a></li>
-            <li class="list-item">2. Make sure you're logged in your account.</li>
-            <li class="list-item">3. Open developer tool (<code>ctrl + shift + i</code>)</li>
-            <li class="list-item">4. Refresh the page <code>ctrl + R</code></li>
-            <li class="list-item">5. Go to the networks tab of dev tools</li>
-            <li class="list-item">6. Search for <code>my-batches</code> in the networks tab</li>
-            <img src="https://cdn.discordapp.com/attachments/961530530803908622/989828782959505458/unknown.png"
-                alt="my-batches">
-            <li>7. After you search, click on the second <code>my-batches</code> option</li>
-            <img src="https://cdn.discordapp.com/attachments/961530530803908622/989829311471190086/unknown.png"
-                alt="second">
-            <li class="list-item">8. Then, on the right side scroll down to the <strong>request headers</strong> and
-                you'll see
-                <strong>authorization</strong> there.
-            </li>
-            <li class="list-item">9. Copy the long token which is censored in the image.</li>
-            <img src="https://cdn.discordapp.com/attachments/961530530803908622/989830183915782214/unknown.png" alt="">
-        </ul>
+        <h2>To get your batches use this url: <code>https://batter-pw-api.herokuapp.com/<strong>[accessToken]/batches</strong></code></h2>
+        <h2>To get your profile use this url: <code>https://batter-pw-api.herokuapp.com/<strong>[accessToken]/profile</strong></code></h2>
     </div>
-    <section style="text-align: center;" id="howto">
-        <hr>
-        <h1>Congrats! You have your Access Token Now</h1>
-        <hr>
-        <h3>Now, you have your access token. That's all you need to get your data from PW API work made easy for you by
-            us.</h3>
-        <br>
-        <br>
-        <h1>Let's see how to get response from API</h1>
-        <hr>
-        <ul style="list-style: none;">
-            <li class="list-item">1. Copy your access token</li>
-            <li class="list-item">2. Go to the url tab above</li>
-            <img src="https://cdn.discordapp.com/attachments/961530530803908622/989833053914419210/unknown.png" alt="">
-            <li class="list-item">3. Paste your access token after the root url like this:</li>
-            <br>
-            <li class="list-item">It should look like this: <code>localhost:6969/[token_here]</code></li>
-            <img src="https://cdn.discordapp.com/attachments/961530530803908622/989833528252440656/unknown.png" alt="">
-            <li class="list-item">At last just add <code>/data</code> at the end of the url</li>
-            <img src="https://cdn.discordapp.com/attachments/961530530803908622/989834921470226432/unknown.png" alt="">
-
-        </ul>
     </section>
     <!-- <form action="/" method="post" style="content: center;">
         <input type="text" name="access"><button type="submit">Submit</button>
